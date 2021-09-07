@@ -1,0 +1,66 @@
+.aprendiz-sidenav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 50px;
+  background: var(--surface-b);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.aprendiz-sidenav-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.aprendiz-sidenav-logo img {
+  width: 40px;
+}
+
+.aprendiz-sidenav-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+
+}
+
+.aprendiz-sidenav-navigation a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.aprendiz-sidenav-navigation a svg {
+  height: 32px;
+  width: 32px;
+  fill: #868686;
+}
+
+.aprendiz-sidenav-navigation a svg:hover {
+  height: 32px;
+  width: 32px;
+  fill: #D2D2D2;
+}
+
+.aprendiz-sidenav-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aprendiz-sidenav-footer a svg {
+  height: 32px;
+  width: 32px;
+  fill: #868686;
+}
+
+.aprendiz-sidenav-footer a svg:hover {
+  height: 32px;
+  width: 32px;
+  fill: #D2D2D2;
+}

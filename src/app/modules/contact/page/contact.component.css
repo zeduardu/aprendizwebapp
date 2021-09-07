@@ -1,0 +1,86 @@
+:host {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-label-text {
+  color: var(--surface-300);
+}
+
+.contact-input-text-style {
+  border: none;
+  background: none;
+  outline: none;
+
+  border-bottom: 2px solid var(--surface-100);
+  padding: 8px;
+  color: #fff;
+  font-size: medium;
+
+  transition: all 1s;
+}
+
+.contact-input-text-style:focus {
+  background-color: var(--surface-d);
+}
+
+.contact-input-textarea-style {
+  border: none;
+  background: none;
+  outline: none;
+
+  border-left: 1px dashed var(--surface-100);
+  border-bottom: 1px dashed var(--surface-100);
+  height: 20rem;
+  width: 100%;
+  color: var(--text-color);
+
+  transition: all 1s;
+}
+
+.contact-checkbox-style {
+  border: none;
+  background-color: var(--green-600);
+}
+
+.contact-input-textarea-style:focus {
+  background-color: var(--surface-d);
+}
+
+.contact-button-style {
+  border: none;
+  width: 100%;
+  height: 3rem;
+  background-color: var(--orange-700);
+  color: var(--text-color);
+  font-size: large;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  transition: all 1s;
+}
+
+.contact-button-style:hover {
+  background-color: var(--orange-500);
+  color: var(--blue-100);
+}
+
+:host ::ng-deep .p-button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 3rem;
+  border-radius: unset;
+
+  background: var(--orange-600);
+  border: 1px solid var(--orange-600);
+  color: var(--text-color);
+}
+
+:host ::ng-deep .p-button:hover {
+  color: var(--text-color);
+}

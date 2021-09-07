@@ -1,0 +1,77 @@
+<div class="col-10 col-offset-1 h-full flex flex-column justify-content-center">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="grid shadow-5">
+      <div class="col-12 h-3rem"></div>
+      <div class="col-6 pl-5">
+        <span class="text-3xl"
+          >Entre em
+          <span class="border-bottom-2 border-orange-400">contato</span></span
+        >
+        <div class="card mt-8">
+          <div class="field">
+            <label class="contact-label-text" for="iptName">Nome</label>
+            <input
+              id="iptName"
+              type="text"
+              class="inputfield w-full contact-input-text-style"
+              formControlName="name"
+            />
+          </div>
+          <div class="field">
+            <label class="contact-label-text" for="iptEmail">E-mail</label>
+            <input
+              id="iptEmail"
+              type="text"
+              class="inputfield w-full contact-input-text-style"
+              formControlName="email"
+            />
+          </div>
+          <div class="text-300 mt-4 font-bold">Verificação</div>
+          <div class="field-checkbox mt-4">
+            <re-captcha
+              (resolved)="resolved($event)"
+              (error)="onError($event)"
+              errorMode="handled"
+              siteKey="6LfAYDscAAAAAP7ZuCUYn2n4QkliR1L0F8xEIV8v"
+              theme="dark"
+            ></re-captcha>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 border-left-1 relative">
+        <div class="card mb-7">
+          <div class="field">
+            <label class="contact-label-text" for="txtMensagem">Mensagem</label>
+            <textarea
+              pInputTextarea
+              rows="15"
+              cols="30"
+              [autoResize]="autoResize"
+              id="txtMensagem"
+              type="text"
+              class="contact-input-textarea-style"
+              formControlName="message"
+            ></textarea>
+          </div>
+        </div>
+        <p-button
+          type="submit"
+          label="Enviar"
+          icon="pi pi-send"
+          [loading]="(loading$ | async)!"
+          iconPos="right"
+        ></p-button>
+      </div>
+    </div>
+  </form>
+</div>
+<p-dialog
+  header="Atenção"
+  [(visible)]="display"
+  [modal]="true"
+  [style]="{ width: '30vw' }"
+  [draggable]="false"
+  [resizable]="false"
+>
+  <p>{{ message }}</p>
+</p-dialog>

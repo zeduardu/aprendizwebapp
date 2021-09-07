@@ -1,0 +1,16 @@
+{
+    "recommendations": [
+        "eg2.vscode-npm-script",
+        "christian-kohler.npm-intellisense",
+        "johnpapa.angular2",
+        "dbaeumer.vscode-eslint",
+        "donjayamanne.githistory",
+        "eamodio.gitlens",
+        "ecmel.vscode-html-css",
+        "angular.ng-template",
+        "natewallace.angular2-inline",
+        "cyrilletuzi.angular-schematics",
+        "zignd.html-css-class-completion",
+        "esbenp.prettier-vscode"
+    ]
+}
