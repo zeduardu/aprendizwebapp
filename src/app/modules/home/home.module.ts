@@ -9,6 +9,11 @@ import { NewsApiItemComponent } from './page/newsapi-item/newsapi-item.component
 
 @NgModule({
   imports: [CommonModule, HomeRoutes, SharedModule],
-  declarations: [HomeComponent, NewPostsComponent, NewPostsItemComponent, NewsApiItemComponent],
+  declarations: [
+    HomeComponent,
+    NewPostsComponent,
+    NewPostsItemComponent,
+    NewsApiItemComponent,
+  ],
 })
 export class HomeModule {}
