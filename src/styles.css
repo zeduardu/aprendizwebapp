@@ -49,6 +49,7 @@ html, body {
     font-weight: 400;
     color: var(--text-color);
     height: 100%;
+    margin: 0;
 }
 
 .p-component {
