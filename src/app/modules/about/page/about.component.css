@@ -1,5 +1,6 @@
-.about-page {
-
+.about-page_image {
+  border-radius: 10px;
+  width: 100%;
 }
 
 .grid {
