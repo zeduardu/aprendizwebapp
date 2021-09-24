@@ -1,6 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Special+Elite");
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
 .about-page_image {
   border-radius: 10px;
   width: 100%;
+}
+
+.about-page_quote {
+  font-family: "Special Elite", cursive;
+  color: #fffdf5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-page_quote blockquote {
+  font-weight: 100;
+  font-size: 2rem;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.about-page_quote cite {
+  line-height: 3;
+  text-align: left;
 }
 
 .grid {

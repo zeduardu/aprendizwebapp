@@ -11,11 +11,11 @@
   justify-content: space-between;
 }
 
-.aprendiz-sidenav-logo{
+.aprendiz-sidenav-logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10px;
+  margin: 10px 0 0 0;
 }
 
 .aprendiz-sidenav-logo img {
@@ -27,7 +27,6 @@
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-
 }
 
 .aprendiz-sidenav-navigation a {
@@ -71,5 +70,62 @@
 .aprendiz-sidenav-footer a svg:hover {
   height: 32px;
   width: 32px;
-  fill: #D2D2D2;
+  fill: #d2d2d2;
+}
+
+.aprendiz-sidenav_hamburguer-navigation {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .aprendiz-sidenav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 60px;
+    width: 100%;
+    background: var(--surface-b);
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .aprendiz-sidenav-header {
+    display: flex;
+    margin: 0 5px 0 5px;
+  }
+
+  .aprendiz-sidenav-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 0;
+  }
+
+  .aprendiz-sidenav-navigation {
+    display: none;
+  }
+
+  .aprendiz-sidenav-footer {
+    display: none;
+  }
+
+  .aprendiz-sidenav_mobile-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px 0 5px;
+  }
+
+  .aprendiz-sidenav_mobile-button button {
+    border: none;
+    background: none;
+  }
+
+  .aprendiz-sidenav_mobile-button button i {
+    color: var(--surface-500);
+    font-size: 2rem;
+  }
 }
