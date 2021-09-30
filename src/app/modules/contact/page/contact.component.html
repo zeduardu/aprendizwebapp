@@ -43,10 +43,8 @@
           <div class="field">
             <label class="contact-label-text" for="txtMensagem">Mensagem</label>
             <textarea
-              pInputTextarea
               rows="15"
               cols="30"
-              [autoResize]="autoResize"
               id="txtMensagem"
               type="text"
               class="contact-input-textarea-style"
@@ -54,18 +52,18 @@
             ></textarea>
           </div>
         </div>
-        <p-button
+        <!-- <p-button
           type="submit"
           label="Enviar"
           icon="pi pi-send"
           [loading]="(loading$ | async)!"
           iconPos="right"
-        ></p-button>
+        ></p-button> -->
       </div>
     </div>
   </form>
 </div>
-<p-dialog
+<!-- <p-dialog
   header="Atenção"
   [(visible)]="display"
   [modal]="true"
@@ -74,4 +72,4 @@
   [resizable]="false"
 >
   <p>{{ message }}</p>
-</p-dialog>
+</p-dialog> -->

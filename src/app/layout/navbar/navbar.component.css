@@ -3,7 +3,6 @@
   top: 0px;
   left: 0px;
   height: 100%;
-  width: 60px;
   background: var(--surface-b);
 
   display: flex;
@@ -73,7 +72,7 @@
   fill: #d2d2d2;
 }
 
-.aprendiz-sidenav_hamburguer-navigation {
+.aprendiz-sidenav_mobile-button {
   display: none;
 }
 
@@ -128,4 +127,14 @@
     color: var(--surface-500);
     font-size: 2rem;
   }
+}
+
+/* New css */
+.zd-navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 .5rem 0 .5rem;
 }

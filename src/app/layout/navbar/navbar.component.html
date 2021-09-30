@@ -1,29 +1,19 @@
-<div class="aprendiz-sidenav">
-  <div class="aprendiz-sidenav-header">
-    <div class="aprendiz-sidenav-logo">
+<!-- <div id="sidenav" class="h-full">
+  <div class="">
+    <div class="">
       <img
         src="../assets/img/white_icon_transparent_background.png"
         alt="Logo do site aprendiz"
+        height="45"
       />
     </div>
   </div>
-  <div class="aprendiz-sidenav-navigation">
+  <div class="">
     <a routerLink="/home">
-      <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M27 9h-2v15a1 1 0 1 1-2 0h-1v4h2a4 4 0 0 0 4-4V10a1 1 0 0 0-1-1z"
-        />
-        <path
-          d="M22 2H4a1 1 0 0 0-1 1v21a4 4 0 0 0 4 4h16V3a1 1 0 0 0-1-1zM12 23H6v-2h6v2zm0-4H6v-2h6v2zm0-4H6v-2h6v2zm8 8h-6v-2h6v2zm0-4h-6v-2h6v2zm0-4h-6v-2h6v2zm0-9v3H6V6h14z"
-        />
-      </svg>
+      <i class="pi pi-home"></i>
     </a>
     <a href="#">
-      <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M24.707 8.793l-6.5-6.5A1 1 0 0 0 17.5 2H7a2 2 0 0 0-2 2v22a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9.5a1 1 0 0 0-.293-.707zM18 21h-8a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2zm2-4H10a1 1 0 0 1 0-2h10a1 1 0 0 1 0 2zm-2-7a1 1 0 0 1-1-1V3.904L23.096 10H18z"
-        />
-      </svg>
+      <i class="pi pi-"></i>
     </a>
     <a href="/about">
       <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
@@ -55,7 +45,7 @@
       </svg>
     </a>
   </div>
-  <div class="aprendiz-sidenav-footer">
+  <div class="">
     <a href="#">
       <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -72,10 +62,35 @@
     <button><i class="pi pi-bars pi-"></i></button>
   </div>
 </div>
-<nav>
+<nav class="hidden">
   <a href="#">Principal</a>
   <a href="#">Notícias</a>
   <a href="#">Artigos</a>
   <a href="#">Sobre</a>
   <a href="#">Contato</a>
+</nav> -->
+<nav class="zd-navbar navbar-expand-lg navbar-dark">
+
+  <a class="navbar-brand" routerLink="/home">
+    <img src="../../../assets/img/white_icon_transparent_background.png" height="45px" alt="" loading="lazy">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home">Principal <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/about">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact">Contato</a>
+      </li>
+    </ul>
+  </div>
+
 </nav>

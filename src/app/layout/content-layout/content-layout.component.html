@@ -1,5 +1,15 @@
-<app-sidenav></app-sidenav>
+<!-- <app-sidenav></app-sidenav>
 <div class="ml-zd h-full">
     <router-outlet></router-outlet>
+</div> -->
+<div class="cover-container d-flex w-100 h-100 p-2 mx-auto flex-column">
+  <header class="mb-auto">
+    <app-sidenav></app-sidenav>
+  </header>
+  <main class="">
+    <router-outlet></router-outlet>
+  </main>
+  <footer class="mt-auto">
+    <app-footer></app-footer>
+  </footer>
 </div>
-
